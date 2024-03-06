@@ -1,0 +1,16 @@
+# media keys
+XF86Audio{Prev,Next}
+  playerctl {previous,next}
+
+XF86AudioPlay
+  playerctl play-pause
+
+super + n
+  redshift -l 36.693991:48.479315 -t 5700:3600 -g 0.8 -m randr -v &
+
+super + N
+  pkill redshift
+
+
+
+

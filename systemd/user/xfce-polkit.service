@@ -1,0 +1,9 @@
+[Unit]
+Description=xfce-polkit: the xfce policy kit
+
+[Service]
+Type=oneshot
+ExecStart=/usr/lib/xfce-polkit/xfce-polkit
+
+[Install]
+WantedBy=default.target
