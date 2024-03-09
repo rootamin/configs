@@ -11,6 +11,9 @@ super + n
 super + N
   pkill redshift
 
+super + m
+  ~/.config/mouse_keys/mouse_keys.img
+
 Print
   shutter -f
 
