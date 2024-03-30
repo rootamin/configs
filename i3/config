@@ -199,11 +199,11 @@ bindsym $mod+r mode "resize"
 #}
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #E06C75 #E06C75 #ffffff #2e9ef4   #E06C75
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused          #baba46 #baba46 #000000 #baba46   #baba46
+client.focused_inactive #333333 #5f676a #000000 #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.urgent           #2f343a #900000 #000000 #900000   #900000
+client.placeholder      #000000 #0c0c0c #000000 #000000   #0c0c0c
 
 client.background       #ffffff
 
@@ -216,3 +216,4 @@ exec_always caffeine
 exec_always --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
 exec_always "setxkbmap -layout us,ir"
 #exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
+for_window [class="^.*"] border pixel 0

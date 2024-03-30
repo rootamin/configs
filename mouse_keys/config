@@ -1,0 +1,5 @@
+[MouseKeys]
+speed = 0.0025
+shift_speed = 8
+ctrl_speed = 0.25
+
