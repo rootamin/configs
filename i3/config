@@ -210,13 +210,13 @@ client.background       #ffffff
 
 exec_always --no-startup-id exec bash ~/.config/polybar/launch.sh --forest
 exec_always nitrogen --restore
-exec --no-startup-id xwinwrap -ov -fs -- mpv -wid WID --loop-file=inf --no-audio --no-osc --no-osd-bar --panscan=1.0 ~/Videos/live/mylivewallpapers-com-Nomad-Ninja-Girl-4K.mp4
+exec --no-startup-id xwinwrap -ov -fs -- mpv -wid WID --loop-file=inf --no-audio --no-osc --no-osd-bar --panscan=1.0 ~/Videos/live/Ninja_girl_1080p.mp4
 exec_always picom
 exec_always sxhkd
-exec_always caffeine
 exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
-exec --no-startup-id "setxkbmap -layout us,ir"
-exec --no-startup-id "setxkbmap -option 'grp:alt_space_toggle'"
+exec_always caffeine
+exec_always --no-startup-id "setxkbmap -layout us,ir"
+exec_always --no-startup-id "setxkbmap -option 'grp:alt_space_toggle'"
 for_window [class="^.*"] border pixel 0
 # Move focused window to the right monitor
 bindsym $mod+Shift+greater move window to output down
